@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Previsão+</title>
+    <link rel="stylesheet" href="tempo.css">
+    <script src="tempo.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <form class="search-bar">
+            <input type="text" id="city" placeholder="Pesquise o tempo em sua cidade" name="query">
+            <button type="button" onclick="getWeather()">Buscar</button>
+        </form>
+
+        <form>
+            <label for="date">Selecione a data:</label>
+            <input type="date" id="date" name="date">
+            <button type="submit">Enviar</button>
+        </form>
+
+        <h2>Saiba qual a temperatura em sua cidade</h2>
+        <p id="temperature">Temperatura: --°C</p>
+
+        <div class="weather-info">
+            <div class="air-quality">
+                <h3>Qualidade do Ar:</h3>
+                <p id="air-quality">--</p>
+            </div>
+            <div class="humidity">
+                <h3>Umidade:</h3>
+                <p id="humidity">--%</p>
+            </div>
+            <div class="wind-speed">
+                <h3>Velocidade do Vento:</h3>
+                <p id="wind-speed">-- km/h</p>
+            </div>
+            <div class="uv-index">
+                <h3>Índice UV:</h3>
+                <p id="uv-index">--</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
